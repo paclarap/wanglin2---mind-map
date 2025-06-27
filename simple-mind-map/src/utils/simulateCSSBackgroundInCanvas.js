@@ -15,13 +15,13 @@ const getNumberValueFromStr = value => {
 
 // 缩放宽度
 const zoomWidth = (ratio, height) => {
-  // w / height = ratio
+  // width / height = ratio
   return ratio * height
 }
 
 // 缩放高度
 const zoomHeight = (ratio, width) => {
-  // width / h = ratio
+  // width / height = ratio
   return width / ratio
 }
 
