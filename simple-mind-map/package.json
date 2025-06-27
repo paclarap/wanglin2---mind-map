@@ -24,7 +24,7 @@
     "format": "prettier --write .",
     "types": "npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types --target es2017 --skipLibCheck & node ./bin/createPluginsTypeFiles.js",
     "wsServe": "node ./bin/wsServer.mjs",
-    "test": "node ./test/utils.test.js"
+    "test": "mocha ./test/utils.test.js"
   },
   "module": "index.js",
   "main": "./dist/simpleMindMap.umd.min.js",
@@ -51,8 +51,9 @@
     "mindMap",
     "MindMap"
   ],
-  "devDependencies": {
-    "eslint": "^8.25.0",
-    "prettier": "^2.7.1"
-  }
+    "devDependencies": {
+      "eslint": "^8.25.0",
+      "prettier": "^2.7.1",
+      "mocha": "^10.2.0"
+    }
 }
