@@ -33,7 +33,7 @@ export const fullScreen = element => {
 }
 
 /**
- * javascript comment
+ * Convert a file into an ArrayBuffer
  * @Author: 王林25
  * @Date: 2022-10-24 14:16:18
  * @Desc: 文件转buffer
