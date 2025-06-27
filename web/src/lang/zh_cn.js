@@ -25,6 +25,7 @@ export default {
     belowLevel2Node: '三级及以下节点',
     nodeBorderType: '节点边框风格',
     nodeUseLineStyle: '是否使用只有底边框的风格',
+    otherConfig: '其他配置',
     associativeLine: '关联线',
     associativeLineWidth: '粗细',
     associativeLineColor: '颜色',

@@ -139,7 +139,7 @@ export const resizeImg = (imgUrl, maxWidth, maxHeight) => {
   })
 }
 
-//  从头html结构字符串里获取带换行符的字符串
+//  从html结构字符串里获取带换行符的字符串
 export const getStrWithBrFromHtml = str => {
   str = str.replace(/<br>/gim, '\n')
   let el = document.createElement('div')
@@ -248,6 +248,9 @@ export const parseDataUrl = data => {
   if (!/^data:/.test(data)) return data
   let [typeStr, base64] = data.split(',')
   let res = /^data:[^/]+\/([^;]+);/.exec(typeStr)
+  if (!res) {
+    return null
+  }
   let type = res[1]
   return {
     type,

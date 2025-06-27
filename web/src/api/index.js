@@ -10,9 +10,9 @@ const SIMPLE_MIND_MAP_LOCAL_CONFIG = 'SIMPLE_MIND_MAP_LOCAL_CONFIG'
 let mindMapData = null
 
 /**
- * @Author: 王林
- * @Date: 2021-08-02 22:36:48
- * @Desc: 克隆思维导图数据，去除激活状态
+ * Clone mind map tree data and remove active states
+ * @author 王林
+ * @date 2021-08-02 22:36:48
  */
 const copyMindMapTreeData = (tree, root) => {
   if (!root) return null
@@ -28,9 +28,9 @@ const copyMindMapTreeData = (tree, root) => {
 }
 
 /**
- * @Author: 王林
- * @Date: 2021-08-01 10:10:49
- * @Desc: 获取缓存的思维导图数据
+ * Get cached mind map data
+ * @author 王林
+ * @date 2021-08-01 10:10:49
  */
 export const getData = () => {
   if (window.takeOverApp) {
@@ -53,9 +53,9 @@ export const getData = () => {
 }
 
 /**
- * @Author: 王林
- * @Date: 2021-08-01 10:14:28
- * @Desc: 存储思维导图数据
+ * Store mind map data
+ * @author 王林
+ * @date 2021-08-01 10:14:28
  */
 export const storeData = data => {
   try {
@@ -83,9 +83,9 @@ export const storeData = data => {
 }
 
 /**
- * @Author: 王林
- * @Date: 2021-08-01 10:24:56
- * @Desc: 存储思维导图配置数据
+ * Store mind map configuration
+ * @author 王林
+ * @date 2021-08-01 10:24:56
  */
 export const storeConfig = config => {
   try {
@@ -116,10 +116,9 @@ export const storeConfig = config => {
 }
 
 /**
- * javascript comment
- * @Author: 王林
- * @Date: 2022-11-05 14:36:50
- * @Desc: 存储语言
+ * Save selected language
+ * @author 王林
+ * @date 2022-11-05 14:36:50
  */
 export const storeLang = lang => {
   if (window.takeOverApp) {
@@ -130,10 +129,9 @@ export const storeLang = lang => {
 }
 
 /**
- * javascript comment
- * @Author: 王林
- * @Date: 2022-11-05 14:37:36
- * @Desc: 获取存储的语言
+ * Get stored language
+ * @author 王林
+ * @date 2022-11-05 14:37:36
  */
 export const getLang = () => {
   if (window.takeOverApp) {
@@ -148,10 +146,9 @@ export const getLang = () => {
 }
 
 /**
- * javascript comment
- * @Author: 王林25
- * @Date: 2022-11-14 18:57:31
- * @Desc: 存储本地配置
+ * Save local configuration
+ * @author 王林25
+ * @date 2022-11-14 18:57:31
  */
 export const storeLocalConfig = config => {
   if (window.takeOverApp) {
@@ -161,10 +158,9 @@ export const storeLocalConfig = config => {
 }
 
 /**
- * javascript comment
- * @Author: 王林25
- * @Date: 2022-11-14 18:57:37
- * @Desc: 获取本地配置
+ * Get local configuration
+ * @author 王林25
+ * @date 2022-11-14 18:57:37
  */
 export const getLocalConfig = () => {
   if (window.takeOverApp) {

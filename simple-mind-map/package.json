@@ -23,7 +23,8 @@
     "lint": "eslint src/",
     "format": "prettier --write .",
     "types": "npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types --target es2017 --skipLibCheck & node ./bin/createPluginsTypeFiles.js",
-    "wsServe": "node ./bin/wsServer.mjs"
+    "wsServe": "node ./bin/wsServer.mjs",
+    "test": "node ./test/utils.test.js"
   },
   "module": "index.js",
   "main": "./dist/simpleMindMap.umd.min.js",
