@@ -1,7 +1,7 @@
 import {
   walk,
   getNodeTreeBoundingRect,
-  fullscrrenEvent,
+  fullscreenEvent,
   fullScreen,
   exitFullScreen,
   formatGetNodeGeneralization
@@ -218,13 +218,13 @@ class Demonstrate {
   // 绑定全屏事件
   bindFullscreenEvent() {
     this.onFullscreenChange = this.onFullscreenChange.bind(this)
-    document.addEventListener(fullscrrenEvent, this.onFullscreenChange)
+    document.addEventListener(fullscreenEvent, this.onFullscreenChange)
   }
 
   // 解绑事件
   unBindEvent() {
     window.removeEventListener('keydown', this.onKeydown)
-    document.removeEventListener(fullscrrenEvent, this.onFullscreenChange)
+    document.removeEventListener(fullscreenEvent, this.onFullscreenChange)
   }
 
   // 全屏状态改变
