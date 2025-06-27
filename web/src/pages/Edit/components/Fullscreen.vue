@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { fullscrrenEvent, fullScreen } from '@/utils'
+import { fullscreenEvent, fullScreen } from '@/utils'
 
 /**
  * @Author: 王林
@@ -41,7 +41,7 @@ export default {
     return {}
   },
   created() {
-    document[fullscrrenEvent] = () => {
+    document[fullscreenEvent] = () => {
       setTimeout(() => {
         this.mindMap.resize()
       }, 1000)
